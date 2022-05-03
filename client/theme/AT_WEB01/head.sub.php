@@ -74,9 +74,11 @@ if($config['cf_add_meta'])
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/table/faq.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL;?>/common/animate.css">
-
+<!--부트스트랩4.5-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <!--커스터마이징 css-->
-<link rel="stylesheet" href="/client/yumi/css/yumi.min.css">
+<link rel="stylesheet" href="/client/yumi/css/yumi.min.css?ver<?php echo time();?>">
+
 <!--[if IE]> 
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL?>/ie.css">
 <![endif]-->

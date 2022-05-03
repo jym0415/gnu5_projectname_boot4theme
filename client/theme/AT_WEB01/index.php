@@ -28,29 +28,7 @@ include_once(G5_THEME_PATH.'/head.php');
    <div class="box inner">
    
    <?php echo latest('pic_list', 'main',3 ,100);?>
-       
-
         
-        <div class="detail">
-            <ul class="clearfix">
-                <li class="first wow bounceInUp" data-wow-delay="0.5s">
-                    <img src="<?php echo G5_THEME_IMG_URL ?>/main/about_icon1.png">
-                    <p>진행중인 프로젝트 수</p>
-                    <strong><span>8,<span class="number" data-max="506" data-vel="6">506</span></span>건</strong>
-                </li>
-                <li class="second wow bounceInUp" data-wow-delay="0.6s">
-                    <img src="<?php echo G5_THEME_IMG_URL ?>/main/about_icon2.png">
-                    <p>함께한 클라이언트 수</p>
-                    <strong><span>1,<span class="number" data-max="766" data-vel="1">766</span></span>명</strong>
-                </li>
-                <li class="third wow bounceInUp" data-wow-delay="0.7s">
-                    <img src="<?php echo G5_THEME_IMG_URL ?>/main/about_icon3.png">
-                    <p>진행중인 상담 수</p>
-                    <strong><span class="number" data-max="106" data-vel="30">106</span>건</strong>
-                </li>                                 
-            </ul>
-        </div>
-
     </div>
 </div>
 

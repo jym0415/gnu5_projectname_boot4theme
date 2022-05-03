@@ -53,6 +53,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
         }
 
         $bo_subject = get_text($board['bo_subject']);
+        $bo_1 = get_text($board['bo_1']);
 
         $tmp_write_table = $g5['write_prefix'] . $bo_table; // 게시판 테이블 전체이름
         $sql = " select * from {$tmp_write_table} where wr_is_comment = 0 order by wr_num limit 0, {$rows} ";
@@ -96,6 +97,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
             $caches = array(
                 'list' => $list,
                 'bo_subject' => sql_escape_string($bo_subject),
+                'bo_1' => sql_escape_string($bo_1),
             );
 
             g5_set_cache($cache_file_name, $caches, (int) $time_unit * (int) $cache_time);
@@ -103,6 +105,7 @@ function latest($skin_dir='', $bo_table, $rows=10, $subject_len=40, $cache_time=
     } else {
         $list = $cache_list;
         $bo_subject = (is_array($caches) && isset($caches['bo_subject'])) ? $caches['bo_subject'] : '';
+        $bo_1 = (is_array($caches) && isset($caches['bo_1'])) ? $caches['bo_1'] : '';
     }
 
     ob_start();
